@@ -1,0 +1,74 @@
+{
+  "tests": [
+    {
+      "name": "Show python versions",
+      "setup": "",
+      "run": "python src/python_versions.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 0
+    },
+    {
+      "name": "Test Assignment Notebook runs all cells cleanly",
+      "setup": "",
+      "run": "cd notebooks; jupyter nbconvert --execute Assg-05-Convolution-Pooling-Layers-Implementation.ipynb --to notebook",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Task 1.1 test calc_new_height()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m unittest test_assg_tasks.test_calc_new_height_width",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Task 1.2 test pool_forward()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m unittest test_assg_tasks.test_pool_forward",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "Task 2.1 test zero_pad()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m unittest test_assg_tasks.test_zero_pad",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Task 2.2 test conv_single_step()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m unittest test_assg_tasks.test_conv_single_step",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    },
+    {
+      "name": "Task 2.3 test conv_forward()",
+      "setup": "",
+      "run": "PYTHONPATH=$(pwd)/src python -m unittest test_assg_tasks.test_conv_forward",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
